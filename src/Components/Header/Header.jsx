@@ -1,6 +1,6 @@
 import React from 'react'
 import MenuSection from './MenuSection'
-import ShowcaseSection from './ShowcaseSection'
+import ShowcaseSection from '../Home/ShowcaseSection'
 import './Header.css'
 
 const Header = () => {

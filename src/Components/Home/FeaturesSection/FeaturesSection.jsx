@@ -1,7 +1,7 @@
 import React from 'react'
 import './FeaturesSection.css'
 import ContentBox from './ContentBox'
-import Button from '../Generics/Button'
+import Button from '../../Generics/Button'
 
 const FeaturesSection = () => {
   return (

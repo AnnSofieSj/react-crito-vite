@@ -1,0 +1,103 @@
+.why-us{
+    position: relative;
+    z-index: 0;
+
+    .background-box{       
+
+        @media (min-width: 1200px){
+            background-color: #F0EFE9;
+            height: 40%;
+            width: 55dvw;
+    
+            position: absolute;
+            right: 0;
+            bottom: 40px;
+            z-index: -1;      
+        }
+    }
+
+    .container{        
+        
+        @media (min-width: 1200px){
+            display: flex; 
+        }
+
+        .left-side{
+            flex: 1;
+
+            .section-title{
+                text-align: center;
+
+                @media (min-width: 1200px){
+                    text-align: left;
+                }
+
+                h2{                    
+
+                    @media (min-width: 1400px){
+                        padding-right: 40%; 
+                    }
+                    @media (min-width: 1200px){
+                        padding-right: 20%; 
+                    }
+                }                
+            }                       
+                
+            .headlines{                
+                margin-bottom: 20px;
+
+                .headline{                    
+                    display: flex;  
+                    justify-content: center;   
+                    margin-bottom: 10px;     
+                    
+                    @media (min-width: 1200px){
+                        justify-content: left;
+                    }
+
+                    .icon{ 
+                        margin-right: 7px;                         
+
+                        @media (min-width: 415px){
+                            margin-right: 25px; 
+                            margin-top: 3px;   
+                            margin-bottom: 20px;
+                            border: 1px solid rgba(0, 0, 0, 0.20);
+                            border-radius: 50%;
+                            padding: 10px 18px;     
+                        }
+                        
+                        i{
+                            margin-top: 8px;                            
+                        }  
+                    }
+
+                    .text{
+                        h3{     
+                            font-family: 'DM Sans', sans-serif;
+                            font-size: 22px;
+                            font-weight: 700;                                         
+                        } 
+                    }
+                } 
+            } 
+        }
+
+        .right-side{
+            margin: auto;  
+            flex: 1;
+
+            img{     
+                display: block;                         
+                width: 90%;
+                height: auto; 
+                margin: auto;   
+                
+                @media (min-width: 1400px){
+                    margin: 0;
+                    width: 100%;
+                }  
+            }
+        }
+    }
+}

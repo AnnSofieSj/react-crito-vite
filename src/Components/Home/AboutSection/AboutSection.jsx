@@ -2,7 +2,7 @@ import React from 'react'
 import './AboutSection.css'
 import brown from '@Images/samanthabrown.png'
 import wavesAbout from '@Images/waves-about.svg'
-import Button from '../Generics/Button'
+import Button from '../../Generics/Button'
 
 const AboutSection = () => {
   return (

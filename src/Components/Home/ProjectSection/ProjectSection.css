@@ -1,0 +1,54 @@
+.project .container .section-title {
+  text-align: center;
+}
+.project .container .project-articles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .project .container .project-articles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.project .container .project-articles a {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  color: #191919;
+  text-decoration: none;
+}
+.project .container .project-articles a img {
+  width: 100%;
+  height: auto;
+}
+.project .container .project-articles a h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dad9d3;
+}
+.project .container .project-articles a .readmore {
+  padding: 10px;
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+}
+.project .container .project-articles a .readmore i {
+  margin-left: 5px;
+}
+.project .container .project-articles a:hover .readmore {
+  text-decoration: underline;
+  text-decoration-color: #f9d783;
+  color: #f9d783;
+  font-weight: 800;
+}
+.project .container .project-articles a:hover img {
+  opacity: 50%;
+}
+.project .container .center-objects {
+  padding: 35px;
+}

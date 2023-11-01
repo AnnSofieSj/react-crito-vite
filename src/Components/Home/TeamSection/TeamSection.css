@@ -1,0 +1,53 @@
+.team {
+  background-color: #edcf86;
+}
+.team .container .section-top {
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .team .container .section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}
+.team .container .section-top .section-title {
+  padding-bottom: 20px;
+}
+@media (min-width: 1000px) {
+  .team .container .section-top .section-title {
+    padding-bottom: 120px;
+  }
+}
+.team .container .section-top .btn-yellow {
+  border: 1px solid #191919;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.team .container .team-members {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .team .container .team-members {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.team .container .team-members .member img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+.team .container .dots {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.team .container .dots i {
+  margin: 6px;
+}
