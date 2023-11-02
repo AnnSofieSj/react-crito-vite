@@ -1,58 +1,30 @@
 import React from 'react'
 import './ServiceSection.css'
+import Button from '../../Generics/Button'
+import backgroundlines from '@Images/waves-services.svg'
+import ServiceBox from './ServiceBox'
+import SectionTitle from '../../Generics/SectionTitle'
 
 const ServiceSection = () => {
+
+    const services =[
+        {title: "Business Advice", description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.", url:""},
+        {title: "Startup Business", description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.", url:""},
+        {title: "Financial Advice", description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.", url:""},
+        {title: "Risk Management", description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.", url:""}
+    ]
+
   return (
-<section className="services">
-        <img className="waves-services" src="images/waves-services.svg" alt="backgroundlines" />
+    <section className="services">
+        <img className="waves-services" src={backgroundlines} alt="backgroundlines" />
         <div className="container">
-            <div className="section-title">
-                <p>Our Services</p>
-                <h2>We Provide The Best Service For Consulting</h2>
-            </div>
+            <SectionTitle title="Our Services" text="We Provide The Best Service For Consulting"/>
             <div className="link-boxes">
-                <div className="box">
-                    <a href="#">
-                        <div className="advice">
-                            <i className="fa-sharp fa-light fa-horizontal-rule"></i>
-                            <h3>Business Advice</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                            <button className="btn-round"><i className="fa-light fa-arrow-right"></i></button>
-                        </div>
-                    </a>
-                </div>
-                <div className="box">
-                    <a href="#">
-                        <div className="startup">
-                            <i className="fa-sharp fa-light fa-horizontal-rule"></i>
-                            <h3>Startup Business</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                            <button className="btn-round"><i className="fa-light fa-arrow-right"></i></button>
-                        </div>
-                    </a>
-                </div>
-                <div className="box">
-                    <a href="#">
-                        <div className="financial">
-                            <i className="fa-sharp fa-light fa-horizontal-rule"></i>
-                            <h3>Financial Advice</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                            <button className="btn-round"><i className="fa-light fa-arrow-right"></i></button>
-                        </div>
-                    </a>
-                </div>
-                <div className="box">
-                    <a href="#">
-                        <div className="risk">
-                            <i className="fa-sharp fa-light fa-horizontal-rule"></i>
-                            <h3>Risk Management</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                            <button className="btn-round"><i className="fa-light fa-arrow-right"></i></button>
-                        </div>
-                    </a>
-                </div>
+                {services.map((service, index) => (
+                    <ServiceBox key={index} title={service.title} description={service.description} url={service.url}/>
+                ))}                
             </div>
-           <div className="center-objects"><a className="btn-transparent" href="services.html">Brows services <i className="fa-solid fa-arrow-up-right"></i></a></div> 
+            <div className="center-objects"><Button type="transparent" text="Brows services" url=""/></div> 
         </div>
     </section>  )
 }

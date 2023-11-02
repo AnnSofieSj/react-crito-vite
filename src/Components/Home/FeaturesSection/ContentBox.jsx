@@ -1,10 +1,11 @@
 import React from 'react'
 
-const ContentBox = ({titel, description}) => {
+
+const ContentBox = ({image, title, description}) => {
   return ( 
     <div>
-        <img src="images/hands.svg" alt="shaking hand" />
-        <h3>{titel}</h3>
+        <img src={image} alt="shaking hand" />
+        <h3>{title}</h3>
         <p>{description}</p>
     </div>
   )

@@ -22,9 +22,9 @@ const Home = () => {
         <ServiceSection />
         <WhyUsSection />
         <ProjectSection />   
-        {/* <TeamSection />      */}
+        <TeamSection />     
         <TestimonialSection />
-        {/* <ArticlesSection /> */}
+        <ArticlesSection />
         <NewsSection />
         <Footer />
     </>

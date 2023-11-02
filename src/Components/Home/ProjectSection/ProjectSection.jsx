@@ -1,5 +1,11 @@
 import React from 'react'
 import './ProjectSection.css'
+import business from '@Images/article-business.png'
+import responsive from '@Images/article-responsive.png'
+import educate from '@Images/article-educate.png'
+import insights from '@Images/article-insights.png'
+import Button from '../../Generics/Button'
+
 
 const ProjectSection = () => {
   return (
@@ -11,7 +17,7 @@ const ProjectSection = () => {
             </div>
             <div className="project-articles">
                 <a href="#">
-                    <img src="images/article-business.png" alt="image of a man reading Business paper" />
+                    <img src={business} alt="image of a man reading Business paper" />
                     <h3>
                         Grow your business
                     </h3>
@@ -19,7 +25,7 @@ const ProjectSection = () => {
                     </div>                                      
                 </a>                
                 <a href="#">
-                    <img src="images/article-responsive.png" alt="image of a man reading Business paper" />
+                    <img src={responsive} alt="image of a man reading Business paper" />
                     <h3>
                         Why your client needs a responsive website
                     </h3>
@@ -27,7 +33,7 @@ const ProjectSection = () => {
                     </div>                    
                 </a>
                 <a href="#">
-                    <img src="images/article-educate.png" alt="image of a man reading Business paper" />
+                    <img src={educate} alt="image of a man reading Business paper" />
                     <h3>
                         Educate your employees to get better results
                     </h3>
@@ -35,7 +41,7 @@ const ProjectSection = () => {
                     </div>                   
                 </a>
                 <a href="#">
-                    <img src="images/article-insights.png" alt="image of a man reading Business paper" />
+                    <img src={insights} alt="image of a man reading Business paper" />
                     <h3>
                         Business Insights is a important piece of your business
                     </h3>
@@ -43,7 +49,7 @@ const ProjectSection = () => {
                     </div>                    
                 </a>
             </div>
-            <div className="center-objects"><a className="btn-black" href="projects.html">All Recent Projects <i className="fa-solid fa-arrow-up-right"></i></a>
+            <div className="center-objects"><Button type="black" text="All Recent Projects" url=""/>
             </div>
         </div>
     </section>

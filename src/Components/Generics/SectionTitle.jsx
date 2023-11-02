@@ -1,9 +1,11 @@
 import React from 'react'
 
-const SectionTitle = () => {
+const SectionTitle = ({title, text}) => {
   return (
-    <div>SectionTitle</div>
-  )
+    <div className="section-title">
+        <p>{title}</p>
+        <h2>{text}</h2>
+    </div>  )
 }
 
 export default SectionTitle

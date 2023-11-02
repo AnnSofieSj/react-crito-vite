@@ -1,5 +1,6 @@
 import React from 'react'
 import './WhyUsSection.css'
+import chatting from '@Images/chatting.png'
 
 const WhyUsSection = () => {
   return (
@@ -43,7 +44,7 @@ const WhyUsSection = () => {
                 </div>                
             </div>
             <div className="right-side">
-                <img src="images/chatting.png" alt="two women talking at a desk holding a tablet" />                
+                <img src={chatting} alt="two women talking at a desk holding a tablet" />                
             </div>
         </div>
     </section>  )

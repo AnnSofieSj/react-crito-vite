@@ -1,14 +1,16 @@
 import React from 'react'
 import './Footer.css'
+import waves from '@Images/waves-footer.svg'
+import logo from '@Images/Logo-footer.svg'
 
 const Footer = () => {
   return (
     <footer>
-        <img className="waves-footer" src="images/waves-footer.svg" alt="backgroundlines" />
+        <img className="waves-footer" src={waves} alt="backgroundlines" />
         <div className="container">
             <div className="footer-top">                
                 <div className="logo">
-                    <img src="images/Logo-footer.svg" alt="crito logotype" />
+                    <img src={logo} alt="crito logotype" />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
                 </div>
                 <div className="footer-headline">
