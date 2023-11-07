@@ -1,7 +1,8 @@
 import React from 'react'
-import backgroundlines from '../../assets/Images/waves-showcase.svg'
-import img_showcase from '../../assets/Images/showcase.svg'
-import Button from '../Generics/Button'
+import './Showcase.css'
+import backgroundlines from '@Images/waves-showcase.svg'
+import img_showcase from '@Images/showcase.svg'
+import Button from '../../Generics/Button'
 
 
 const ShowcaseSection = () => {

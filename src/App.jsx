@@ -10,7 +10,7 @@ function App() {
      <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/contact.html' element={<Contact />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<NotFound />} />
       </Routes>    
      </BrowserRouter>    

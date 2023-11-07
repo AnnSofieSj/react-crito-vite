@@ -11,11 +11,13 @@ import TestimonialSection from '../Components/Home/TestimonialSection/Testimonia
 import ArticlesSection from '../Components/Home/ArticlesSection/ArticlesSection'
 import NewsSection from '../Components/Home/NewsSection/NewsSection'
 import Footer from '../Components/Footer/Footer'
+import ShowcaseSection from '../Components/Home/ShowcaseSection/ShowcaseSection'
 
 const Home = () => {
   return (
     <>
         <Header />
+        <ShowcaseSection />
         <PartnerSection />
         <FeaturesSection />
         <AboutSection />

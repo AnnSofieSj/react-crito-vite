@@ -5,6 +5,7 @@ import responsive from '@Images/article-responsive.png'
 import educate from '@Images/article-educate.png'
 import insights from '@Images/article-insights.png'
 import Button from '../../Generics/Button'
+import { Link } from 'react-router-dom'
 
 
 const ProjectSection = () => {
@@ -16,38 +17,38 @@ const ProjectSection = () => {
                 <h2>Let’s Looks Our Global Projects</h2>
             </div>
             <div className="project-articles">
-                <a href="#">
+                <Link to="#">
                     <img src={business} alt="image of a man reading Business paper" />
                     <h3>
                         Grow your business
                     </h3>
                     <div className="readmore">Read more<i className="fa-solid fa-arrow-up-right"></i>
                     </div>                                      
-                </a>                
-                <a href="#">
+                </Link>                
+                <Link to="#">
                     <img src={responsive} alt="image of a man reading Business paper" />
                     <h3>
                         Why your client needs a responsive website
                     </h3>
                     <div className="readmore">Read more<i className="fa-solid fa-arrow-up-right"></i>
                     </div>                    
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                     <img src={educate} alt="image of a man reading Business paper" />
                     <h3>
                         Educate your employees to get better results
                     </h3>
                     <div className="readmore">Read more<i className="fa-solid fa-arrow-up-right"></i>
                     </div>                   
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                     <img src={insights} alt="image of a man reading Business paper" />
                     <h3>
                         Business Insights is a important piece of your business
                     </h3>
                     <div className="readmore">Read more<i className="fa-solid fa-arrow-up-right"></i>
                     </div>                    
-                </a>
+                </Link>
             </div>
             <div className="center-objects"><Button type="black" text="All Recent Projects" url=""/>
             </div>
