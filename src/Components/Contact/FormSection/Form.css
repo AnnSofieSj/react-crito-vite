@@ -24,6 +24,14 @@
   font-weight: 700;
   margin-bottom: 15px;
 }
+.form .container .errorMessage {
+  text-align: center;
+  color: rgb(234, 25, 25);
+  padding: 5px;
+}
+.form .container .error {
+  color: rgb(234, 25, 25);
+}
 .form .container form {
   text-align: center;
 }
