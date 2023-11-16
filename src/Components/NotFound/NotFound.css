@@ -1,0 +1,18 @@
+.notfound img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.notfound .navlink {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 200px;
+}
+.notfound .navlink .link {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
