@@ -20,9 +20,7 @@ const AboutSection = () => {
         </div>
         <div className="content-right">
             <p id="about">About Company</p>
-            <h2>
-                We Are Business Consulting & Credit Repair Experts
-            </h2>
+            <h2>We Are Business Consulting & Credit Repair Experts</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos.</p>                
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>
             <Button type="black" text="Learn more" url=""/>

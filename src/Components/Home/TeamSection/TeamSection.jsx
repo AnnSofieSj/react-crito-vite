@@ -5,47 +5,30 @@ import kristine from '@Images/kristine.png'
 import mark from '@Images/mark.png'
 import kimberly from '@Images/kimberly.png'
 import justin from '@Images/justin.png'
+import SectionTitle from '../../Generics/SectionTitle'
+import MemberBox from './MemberBox'
 
 const TeamSection = () => {
+
+    const MemberBoxes = [
+        {image: `${kristine}`, altText:"photo of kristine palmer", title:"Kristine Parmler", description:"Chef Operation Officer"},
+        {image: `${mark}`, altText:"photo of mark aubri", title:"Mark Aubri", description:"Senior Consultant"},
+        {image: `${kimberly}`, altText:"photo of kimberly hansen", title:"Kimberly Hansen", description:"Senior Consultant"},
+        {image: `${justin}`, altText:"photo of justin willoman", title:"Justin Willoman", description:"Senior Tech Consultant"}
+    ]
+
   return (
     <section className="team">
         <div className="container">
             <div className="section-top">
-                <div className="section-title">
-                    <p>Meet Our Team</p>
-                    <h2>Experience Team Members</h2>
-                </div>
+                <SectionTitle title="Meet Our Team" text="Experience Team Members"/>                
                 <Button type="yellow" text="Browse Team" url=""/>
             </div>
             <div className="team-members">
-                <div className="member">
-                    <img src={kristine} alt="photo of kristine palmer" />
-                    <h3>Kristine Parmler</h3>
-                    <p>Chef Operation Officer</p>
-                </div>
-                <div className="member">
-                    <img src={mark} alt="photo of mark aubri" />
-                    <h3>Mark Aubri</h3>
-                    <p>Senior Consultant</p>
-                </div>
-                <div className="member">
-                    <img src={kimberly} alt="photo of kimberly hansen" />
-                    <h3>Kimberly Hansen</h3>
-                    <p>Senior Consultant</p>
-                </div>
-                <div className="member">
-                    <img src={justin} alt="photo of justin willoman" />
-                    <h3>Justin Willoman</h3>
-                    <p>Senior Tech Consultant</p>
-                </div>
-            </div>
-            {/* <div className="dots">
-                <i className="fa-duotone fa-circle" style="--fa-secondary-opacity: 0.2;"></i>
-                <i className="fa-solid fa-circle"></i>
-                <i className="fa-duotone fa-circle" style="--fa-secondary-opacity: 0.2;"></i>
-                <i className="fa-duotone fa-circle" style="--fa-secondary-opacity: 0.2;"></i>
-                <i className="fa-duotone fa-circle" style="--fa-secondary-opacity: 0.2;"></i>
-            </div> */}
+                {MemberBoxes.map((boxes, index) => (
+                    <MemberBox key={index} image={boxes.image} altText={boxes.altText} title={boxes.title} description={boxes.description} />
+                ))}               
+            </div>            
         </div>
     </section>  )
 }

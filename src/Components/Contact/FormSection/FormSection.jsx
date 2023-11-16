@@ -50,10 +50,7 @@ const FormSection = () => {
                     break;
                 case 400:
                     setErrorMessage ('Något gick fel.')
-                    break;
-                case 409:
-                    setErrorMessage ('Något gick fel.')
-                    break;
+                    break;                
             }
         }        
     })

@@ -5,50 +5,27 @@ import responsive from '@Images/article-responsive.png'
 import educate from '@Images/article-educate.png'
 import insights from '@Images/article-insights.png'
 import Button from '../../Generics/Button'
-import { Link } from 'react-router-dom'
+import SectionTitle from '../../Generics/SectionTitle'
+import ArticleBox from './ArticleBox'
 
 
 const ProjectSection = () => {
+
+    const ArticleBoxes = [
+        {link:"#", image:`${business}`, altText:"image of a man reading Business paper", title:"Grow your business"},
+        {link:"#", image:`${responsive}`, altText:"image of a man reading Business paper", title:"Why your client needs a responsive website"},
+        {link:"#", image:`${educate}`, altText:"image of a man reading Business paper", title:"Educate your employees to get better results"},
+        {link:"#", image:`${insights}`, altText:"image of a man reading Business paper", title:"Business Insights is a important piece of your business"}
+    ]
+
   return (
 <section className="project">
         <div className="container">
-            <div className="section-title">
-                <p>Project & Case Studies</p>
-                <h2>Let’s Looks Our Global Projects</h2>
-            </div>
+            <SectionTitle title="Project & Case Studies" text="Let’s Looks Our Global Projects" />            
             <div className="project-articles">
-                <Link to="#">
-                    <img src={business} alt="image of a man reading Business paper" />
-                    <h3>
-                        Grow your business
-                    </h3>
-                    <div className="readmore">Read more<i className="fa-solid fa-arrow-up-right"></i>
-                    </div>                                      
-                </Link>                
-                <Link to="#">
-                    <img src={responsive} alt="image of a man reading Business paper" />
-                    <h3>
-                        Why your client needs a responsive website
-                    </h3>
-                    <div className="readmore">Read more<i className="fa-solid fa-arrow-up-right"></i>
-                    </div>                    
-                </Link>
-                <Link to="#">
-                    <img src={educate} alt="image of a man reading Business paper" />
-                    <h3>
-                        Educate your employees to get better results
-                    </h3>
-                    <div className="readmore">Read more<i className="fa-solid fa-arrow-up-right"></i>
-                    </div>                   
-                </Link>
-                <Link to="#">
-                    <img src={insights} alt="image of a man reading Business paper" />
-                    <h3>
-                        Business Insights is a important piece of your business
-                    </h3>
-                    <div className="readmore">Read more<i className="fa-solid fa-arrow-up-right"></i>
-                    </div>                    
-                </Link>
+                {ArticleBoxes.map((boxes, index) => (
+                    <ArticleBox key={index} link={boxes.link} image={boxes.image} altText={boxes.altText} title={boxes.title} />
+                ))}               
             </div>
             <div className="center-objects"><Button type="black" text="All Recent Projects" url=""/>
             </div>
