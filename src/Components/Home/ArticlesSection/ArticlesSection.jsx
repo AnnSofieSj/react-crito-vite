@@ -26,7 +26,7 @@ const ArticlesSection = () => {
             <div className="container">
                 <div className="section-top">
                     <SectionTitle title="Article & News" text="Get Every Single Articles & News"/>                   
-                    <Button type="transparent" text="Browse Articles" url=""/>
+                    <Button type="transparent" text="Browse Articles" url="/news"/>
                 </div>
 
                 <div className="articles">

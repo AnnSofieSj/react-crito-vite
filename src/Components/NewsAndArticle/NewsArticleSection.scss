@@ -28,7 +28,9 @@
                 gap: 40px;
             }
 
-            .article{
+            .article{                
+                    text-decoration: none;
+
                 img{
                     margin-bottom: 40px;
                     margin-top: 40px;
@@ -42,10 +44,14 @@
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
                     font-size: 22px;
+                    color: #191919;                  
+
                 }
 
                 p{
                     margin-bottom: 30px;
+                    color: #191919;
+                    text-decoration: none;
                 }
             }
         }        
